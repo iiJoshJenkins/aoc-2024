@@ -1,4 +1,4 @@
-import { parseInput } from '../utils/parseInput';
+import { parseInput } from '../../utils/parseInput';
 
 export function calculateDifference(
   array1: number[],

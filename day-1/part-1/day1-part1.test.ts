@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { calculateDifference } from './day-1';
+import { calculateDifference } from './day1-part1';
 
 describe('Total distance between arrays', () => {
   test('Should return 9 when the input is [1, 2, 3] and [4, 5, 6]', () => {
