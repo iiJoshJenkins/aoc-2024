@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2017",
+    "lib": ["es2017"],
+    "strict": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "LF",
+    "sourceMap": true,
+    "pretty": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "incremental": true,
+    "tsBuildInfoFile": "./.tsbuildinfo"
+  },
+  "include": ["src/**/*"]
+}
