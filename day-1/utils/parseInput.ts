@@ -15,9 +15,9 @@ export async function parseInput(filePath: string): Promise<number[][]> {
   const rightList: number[] = [];
 
   fileData.split('\n').forEach((line) => {
-    const temp = line.split(' ').map(Number);
-    leftList.push(temp[0]);
-    rightList.push(temp[temp.length - 1]);
+    const [left, right] = line.split(/\s+/).map(Number);
+    leftList.push(left);
+    rightList.push(right);
   });
 
   return [leftList.sort(), rightList.sort()];
