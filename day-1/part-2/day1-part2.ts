@@ -1,4 +1,4 @@
-import { parseInput } from '../../utils/parseInput';
+import { parseInput } from '../utils/parseInput';
 
 export function calculateSimilarity(
   array1: number[],
