@@ -17,10 +17,10 @@ export function multiplyFromString(str: string) {
 
 (async () => {
   const input = await parseInput('./day-3/input.txt');
-  let sum = 0;
-  input.forEach((str) => {
-    sum += multiplyFromString(str);
-  });
+
+  const sum = input.reduce((acc, curr) => {
+    return (acc += multiplyFromString(curr));
+  }, 0);
 
   console.log('🚀 ~ sum:', sum);
 })();
