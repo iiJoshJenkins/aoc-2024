@@ -1,4 +1,4 @@
-export async function parseInput(filePath: string): Promise<string[]> {
+export async function parseInput(filePath: string): Promise<string> {
   const file = Bun.file(filePath);
 
   if (!file.exists()) {
@@ -13,5 +13,5 @@ export async function parseInput(filePath: string): Promise<string[]> {
 
   const output: number[][] = [];
 
-  return fileData.split('\n');
+  return fileData;
 }
